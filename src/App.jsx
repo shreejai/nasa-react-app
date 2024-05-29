@@ -1,9 +1,14 @@
+import Footer from "./components/Footer"
+import Main from "./components/Main"
+import Sidebar from "./components/Sidebar"
 
 function App() {
 
   return (
     <>
-      {7*9}
+      <Sidebar/>
+      <Main/>
+      <Footer/>
     </>
   )
 }
