@@ -1,4 +1,5 @@
-export default function Footer() {
+export default function Footer(props) {
+  const {handleToggleModal} = props;
   return (
     <footer>
       <div className="bgGradient"></div>
@@ -7,7 +8,7 @@ export default function Footer() {
         <h1>APOD PROJECT</h1>
         <p>Powered by NASA APOD API</p>
       </div>
-      <button>
+      <button onClick={handleToggleModal}>
       <i className="fa-solid fa-circle-info"></i>
       </button>
     </footer>
